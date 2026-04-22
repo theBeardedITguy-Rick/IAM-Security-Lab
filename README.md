@@ -122,6 +122,10 @@ Simulate secure offboarding of a user.
 ### Security Insight:
 Accounts should be **disabled, not deleted**, to preserve logs and enable forensic investigations.
 
+## Screenshots
+![Leaver Disabled](screenshots/leaver/leaver-account-disabled.png)
+![No Access](screenshots/leaver/leaver-remove-group.png)
+![Audit Log](screenshots/leaver/leaver-audit-log.png)
 ---
 
 # 🚨 Security Incident (Privilege Escalation)
