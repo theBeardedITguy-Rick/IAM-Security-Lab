@@ -70,6 +70,7 @@ Proper onboarding ensures users receive only the access required for their role,
 
 ## Screenshot
 ![Joiner User Creation](screenshots/joiner/joiner-user-created.png)
+![Joiner Group Assignment](screenshots/joiner/joiner-group-assigned.png)
 ![Joiner Audit Log](screenshots/joiner/joiner-audit-log.png)
 ---
 
