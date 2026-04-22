@@ -14,6 +14,15 @@ IronGate Logistics is a fictional mid-sized logistics company used to simulate r
 
 ---
 
+## 🔄 Identity Lifecycle Flow
+
+Joiner → Assign Access → Monitor Logs  
+Mover → Detect Privilege Creep → Remediate  
+Leaver → Disable Account → Remove Access  
+Incident → Detect → Investigate → Contain
+
+---
+
 ## 🏢 Environment
 - Platform: Microsoft Entra ID  
 - Tenant: IronGate Logistics (lab)  
@@ -36,15 +45,6 @@ IronGate Logistics is a fictional mid-sized logistics company used to simulate r
 - Finance-Accounting  
 - IT-HelpDesk  
 - IT-Security  
-
----
-
-## 🔄 Identity Lifecycle Flow
-
-Joiner → Assign Access → Monitor Logs  
-Mover → Detect Privilege Creep → Remediate  
-Leaver → Disable Account → Remove Access  
-Incident → Detect → Investigate → Contain
 
 ---
 
@@ -83,6 +83,8 @@ Proper onboarding ensures users receive only the access required for their role,
 ![Joiner User Creation](screenshots/joiner/joiner-user-created.png)
 ![Joiner Group Assignment](screenshots/joiner/joiner-group-assigned.png)
 ![Joiner Audit Log](screenshots/joiner/joiner-audit-log.png)
+
+**Why it matters:** Improper onboarding can introduce excessive access from day one, increasing organizational risk.
 ---
 
 # 🔵 Mover Scenario (Privilege Creep)
@@ -114,6 +116,8 @@ Privilege creep increases risk by granting unnecessary access, which can be expl
 ![Before Fix](screenshots/mover/mover-before-fix.png)
 ![After Fix](screenshots/mover/mover-after-fix.png)
 ![Audit Log](screenshots/mover/mover-audit-log.png)
+
+**Why it matters:** Role changes are a primary source of privilege creep, which attackers can exploit for lateral movement.
 ---
 
 # 🔴 Leaver Scenario (Offboarding)
@@ -137,6 +141,8 @@ Accounts should be **disabled, not deleted**, to preserve logs and enable forens
 ![Leaver Disabled](screenshots/leaver/leaver-account-disabled.png)
 ![No Access](screenshots/leaver/leaver-remove-group.png)
 ![Audit Log](screenshots/leaver/leaver-audit-log.png)
+
+**Why it matters:** Failure to properly offboard users can lead to unauthorized access and potential data breaches.
 ---
 
 # 🚨 Security Incident (Privilege Escalation)
@@ -163,6 +169,8 @@ Unexpected privilege escalation is a strong indicator of compromise and requires
 ![Remediation](screenshots/incident/incident-removed-from-it-security.png)
 ![Remediation](screenshots/incident/incident-account-disabled.png)
 ![Audit Log](screenshots/incident/incident-audit-log.png)
+
+**Why it matters:** Unauthorized privilege escalation is a key indicator of account compromise and requires immediate response.
 ---
 
 # 🔍 Logging & Monitoring
