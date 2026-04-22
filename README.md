@@ -100,7 +100,7 @@ Privilege creep increases risk by granting unnecessary access, which can be expl
 ## Screenshots
 ![Before Fix](screenshots/mover/mover-before-fix.png)
 ![After Fix](screenshots/mover/mover-after-fix.png)
-![Audit Log].(screenshots/mover/mover-audit-log.png)
+![Audit Log](screenshots/mover/mover-audit-log.png)
 ---
 
 # 🔴 Leaver Scenario (Offboarding)
