@@ -204,10 +204,23 @@ These logs provide:
 
 # 🚀 Future Improvements
 
-- Automate provisioning using PowerShell / Microsoft Graph  
+- Added Microsoft Graph PowerShell automation scripts for onboarding, role changes, and offboarding  
 - Implement alerting for privilege escalation  
 - Integrate with SIEM solutions (Microsoft Sentinel)  
-- Apply conditional access policies  
+- Apply conditional access policies
+
+---
+
+# ⚙️ Automation
+
+To extend the lab, I added Microsoft Graph PowerShell scripts to automate identity lifecycle tasks:
+
+- `connect-to-graph.ps1` – Authenticates to Microsoft Graph
+- `joiner-onboard-user.ps1` – Creates a new user and assigns role-based group access
+- `mover-change-role.ps1` – Transitions a user from one role group to another
+- `leaver-offboard-user.ps1` – Disables a user account and removes group memberships
+
+This demonstrates how IAM tasks can be standardized and scaled through automation rather than handled manually through the portal.
 
 ---
 
