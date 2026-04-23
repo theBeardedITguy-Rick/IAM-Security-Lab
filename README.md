@@ -224,6 +224,6 @@ This demonstrates how IAM tasks can be standardized and scaled through automatio
 
 ---
 
-# 📎 Author
+# Author
 Ricardo Cardenas  
 
